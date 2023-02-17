@@ -1,0 +1,45 @@
+
+#contact{
+    background-color: rgba(20, 4, 63, 0.658);
+    color: aliceblue;
+}
+.jobTitle{
+    color:  rgba(245, 245, 245);
+    background-color:rgb(19, 0, 90);
+    font-size: larger;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+.workExperience{
+    list-style-type: square;
+    align-self: center;
+}
+.experience{
+    list-style-type: square;
+}
+.icon{
+    width: 50px;
+}
+.job{
+    width: 30%;
+}
+#education{
+    display: flex;
+    justify-content: space-around;
+}
+#workExperience{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+body{
+    background-color:#6F7A8A;
+    color: rgb(27, 25, 51);
+}
+.job{
+    width: 80%;
+    padding-left: 45%;
+    border-color: black;
+}
