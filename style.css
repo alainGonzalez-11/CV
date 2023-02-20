@@ -6,6 +6,7 @@
     --white: #fefdffff;
     --azure-web: #eefafcff;
     --black: #051524;
+    --silverNight: #b8b6b1;
 }
 
 
@@ -17,8 +18,9 @@
     font-size: 11pt;
 }
 
-
+/* ---------------------------- */
 /* Configuration for header bar */
+/* ---------------------------- */
 header{
     display: flex;
     justify-content: space-between;
@@ -66,8 +68,10 @@ body{
 
 
 
-
+/* --------------------------------- */
 /* Configuration of About Me Section */
+/* --------------------------------- */
+/* Define the background */
 #profile{
     background: linear-gradient(110deg, var(--yale-blue) 42%, var(--black) 42%, var(--black) 43%, var(--bittersweet) 43%);
     width: 100%;
@@ -77,7 +81,7 @@ body{
     align-items: center;
 }
 
-
+/* Configuration of the left side of the card */
 #bio{
     width: 20%;
     height: 50%;
@@ -93,10 +97,10 @@ body{
     flex-direction: column;
 }
 #profilePhoto{
-    width: 70%;
+    width: 80%;
     border-radius: 50%;
-    margin-bottom: 5%;
-    margin-top: 5%;
+    margin-bottom: 0%;
+    margin-top: 0%;
 }
 #social{
     background-color: var(--black);
@@ -104,7 +108,7 @@ body{
     height: 10%;
 }
 
-
+/* Configuration for the right side of the card */
 #hello{
     width: 20%;
     height: 50%;
@@ -137,8 +141,9 @@ body{
 }
 
 
-
+/* ---------------------- */
 /* My experience section */
+/* ---------------------- */
 #experience{
     padding: 2%;
     display: flex;
@@ -155,22 +160,34 @@ body{
 #experience .period{
     font-weight: bold;
     color: var(--yale-blue);
+    font-size: small;
 }
+/* Definition of jof description item list */
 .experience{
+    display: none;
     margin: 2%;
     text-align: justify;
     list-style: square;
+    color: var(--black);
 }
+/* Configuration to have job descriptions on the right or the left according to the class given */
 .jobRight{
     width: 30%;
     margin-left: 33%;
-    padding-top: 1%;
+    padding-top: 2%;
 }
 .jobLeft{
     width: 30%;
     margin-right: 33%;
-    padding-top: 1%;
+    padding-top: 2%;
     text-align: right;
-    border-right: var(--bittersweet);
-    border-right-style: solid;
+
 }
+/* Code defining the trick for hiding and showing the job descriptions using CSS and checkBox elements */
+.extend{
+    font-size: small;
+    font-weight: bolder;
+    color: var(--silverNight);
+
+}
+input:checked + .experience { display: block; }

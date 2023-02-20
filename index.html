@@ -8,25 +8,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- --------------------- -->
+    <!-- Header bar components -->
+    <!-- --------------------- -->
     <header>
         <section id="presentation">
             <h1> Alain González </h1>
             <h2> Project Manager - Aeronautical Engineer - Software developer</h2>
         </section>
         <nav>
-            <a href="index.html" class="link"> About me </a>
-            <a href="http://www.google.com" class="link"> Experience </a>
-            <a href="http://www.google.com" class="link"> Projects </a>
+            <a href="#profile" class="link"> About me </a>
+            <a href="#experience" class="link"> Experience </a>
+            <!-- <a href="http://www.google.com" class="link"> Projects </a> -->
             <a href="http://www.google.com" class="link"> Education </a>
             <a href="http://www.google.com" class="link"> Contact </a>
-            <a href="http://www.google.com" class="link"> Let's play </a>
         </nav>
     </header>
-    <body>
+
+    <!-- ----------------------- -->
+    <!-- General body components -->
+    <!-- ----------------------- -->
+    <section>
+        <!-- --------------------------- -->
+        <!-- About me section components -->
+        <!-- --------------------------- -->
         <section id="profile">
             <aside id="bio">
                 <section = id="me">
-                    <img src="Profile.jfif" alt="Profile photo of me." id="profilePhoto">
+                    <img src="Resources/Profile.png" alt="Profile photo of me." id="profilePhoto">
                     <p class="title">ALAIN GONZÁLEZ</p>
                     <hr>
                     <p>Project Manager · Software Developer</p>
@@ -49,13 +58,18 @@
                 
         </section>
 
-
+        <!-- ----------------------------- -->
+        <!-- Experience section components -->
+        <!-- ----------------------------- -->
         <section id="experience">
             <h2>My experience</h2>
             
             <article class="jobRight">
-                <h3 class="jobTitle"> Project Manager </h3> <p class="location"> Mexico's National Defense Secretary </p>    
+                <h3 class="jobTitle"> Project Manager </h3> 
+                <p class="location"> Mexico's National Defense Secretary </p>    
                 <p class="period">Since Jan. 2021</p>
+                <label for=job6 class="extend">View more ⮟</label>
+                <input type='checkbox' style='display: none' id=job6 >
                 <ul class="experience">
                     <li> Demonstrated ability to successfully manage multiple projects in a dynamic, complex, and uncertain environment. </li>
                     <li> Established processes for monitoring and supervising projects, tracking and controlling changes, and managing scope.</li>
@@ -69,27 +83,24 @@
             </article>
         
             <article class="jobLeft">
-                <h3 class="jobTitle"> Geospatial Data Analyst</h3> <p>CIIEMAD - Centro Interdisciplinario de Investigaciones y Estudios sobre Medio Ambiente y Desarrollo</p>
+                <h3 class="jobTitle"> Geospatial Data Analyst</h3> 
+                <p class="location">CIIEMAD - Centro Interdisciplinario de Investigaciones y Estudios sobre Medio Ambiente y Desarrollo</p>
+                <p class="period">Nov. 2020 - Jun. 2021</p>
+                <label for=job5 class="extend">View more ⮟</label>
+                <input type='checkbox' style='display: none' id=job5 >
                 <ul class="experience">
                     <li> Conducted an analysis of satellite images and utilized automatic processing methods to determine land use and vegetation coverage of the San Miguel Topilejo Nature Reserve in the Metropolitan Area of Mexico City.</li>
                     <li> Implemented neural network semantic segmentation analysis for image processing and classification.</li>
                     <li> Improved efficiency by automating tasks through the development of Python scripts for image analysis workflows.</li>
                 </ul>
             </article>
-        
+
             <article class="jobRight">
-                <h3 class="jobTitle"> Project Manager</h3> <p>Cuauhtémoc IPN</p>
-                <ul class="experience">
-                    <li> Led the entire project lifecycle, including activity and resource planning, progress monitoring, and budget control.</li>
-                    <li> Ensured continuous stakeholder engagement to foster active involvement.</li>
-                    <li> Chosen projects based on alignment with team's strategic goals.</li>
-                    <li> Managed projects from start to finish, including resource and budget planning. </li>
-                    <li> Delivered technical presentations on various projects to the different stakeholders.</li>
-                </ul>
-            </article>
-        
-            <article class="jobLeft">
-                <h3 class="jobTitle"> Project Manager</h3> <p>Cuauhtémoc IPN</p>
+                <h3 class="jobTitle"> Project Manager </h3> 
+                <p class="location"> Cuauhtemoc IPN Aeroespacial</p>    
+                <p class="period">Jun 2019 - Jun 2020</p>
+                <label for=job4 class="extend">View more ⮟</label>
+                <input type='checkbox' style='display: none' id=job4 >
                 <ul class="experience">
                     <li> Led the entire project lifecycle, including activity and resource planning, progress monitoring, and budget control.</li>
                     <li> Ensured continuous stakeholder engagement to foster active involvement.</li>
@@ -99,9 +110,52 @@
                 </ul>
             </article>
 
+            <article class="jobLeft">
+                <h3 class="jobTitle"> Software Development Team Lead </h3> 
+                <p class="location"> Cuauhtemoc IPN Aeroespacial</p>    
+                <p class="period">Jun 2018 - Jun 2019</p>
+                <label for=job3 class="extend">View more ⮟</label>
+                <input type='checkbox' style='display: none' id=job3 >
+                <ul class="experience">
+                    <li> Coordinated daily tasks for software development teams and power projects for realistic aerospace mission simulations. </li>
+                    <li> Ensured the high quality of all deliverables.</li>
+                    <li> Created innovative software solutions using a range of programming languages including Java, Python, and C++.</li>
+                    <li> Developed user interfaces for real-time presentation of information through integration with IoT technology, enhancing user experience.</li> 
+                    <li> Utilized expertise in software development for embedded systems to contribute to aerospace projects.</li>
+                    <li> Designed and implemented circuits for the power and communication systems of embedded systems, optimizing performance. </li>
+                </ul>
+            </article>
+
+            <article class="jobRight">
+                <h3 class="jobTitle"> Project Manager </h3> 
+                <p class="location"> Cuauhtemoc IPN Aeroespacial</p>    
+                <p class="period">Mar 2018 - Oct 2018</p>
+                <label for=job2 class="extend">View more ⮟</label>
+                <input type='checkbox' style='display: none' id=job2 >
+                <ul class="experience">
+                    <li> Defined clear project requirements, milestones, and activities to ensure successful execution.</li>
+                    <li> Led the project through every stage of its lifecycle, ensuring smooth progress and timely completion.</li>
+                    <li> Expertly planned resources and strictly controlled the budget to maximize efficiency and minimize costs. </li> 
+                </ul>
+            </article>
+
+            <article class="jobLeft">
+                <h3 class="jobTitle"> Software Developer </h3> 
+                <p class="location"> Cuauhtemoc IPN Aeroespacial</p>    
+                <p class="period">Mar 2017 - Jun 2018</p>
+                <label for=job1 class="extend">View more ⮟</label>
+                <input type='checkbox' style='display: none' id=job1 >
+                <ul class="experience">
+                    <li> Created advanced software solutions using a variety of programming languages including Java, C++, and Python.</li>
+                    <li> Developed software for flight computers in aerospace mission simulation projects, utilizing expertise in embedded systems.</li>
+                    <li> Designed and developed a user interface for real-time processing and presentation of telemetry, earning praise and recognition for innovation.</li>
+                    <li> Streamlined the testing process through automation and ensured thorough documentation of all code.</li> 
+                </ul>
+            </article>
+
         </section>
     
-    </body>
+    </section>
     <footer>
 
     </footer>
