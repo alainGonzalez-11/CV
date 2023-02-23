@@ -20,6 +20,7 @@
 h2{
     font-weight: bold;
     font-size: x-large;
+    font-variant: small-caps;
     color: var(--yale-blue);
     
 }
@@ -69,7 +70,10 @@ body{
     width: 100vw;
 }
 
-
+nav{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* --------------------------------- */
 /* Configuration of About Me Section */
@@ -87,6 +91,7 @@ body{
 /* Configuration of the left side of the card */
 #bio{
     width: 20%;
+    min-width: 300px;
     height: 50%;
 }
 #me{
@@ -114,6 +119,7 @@ body{
 /* Configuration for the right side of the card */
 #hello{
     width: 20%;
+    min-width: 300px;
     height: 50%;
     background-color: var(--silver);
     
@@ -176,11 +182,13 @@ body{
 /* Configuration to have job descriptions on the right or the left according to the class given */
 .jobRight{
     width: 30%;
+    min-width: 350px;
     margin-left: 33%;
     padding-top: 2%;
 }
 .jobLeft{
     width: 30%;
+    min-width: 350px;
     margin-right: 33%;
     padding-top: 2%;
     text-align: right;
@@ -219,6 +227,7 @@ input:checked + .experience { display: block; }
     box-shadow: 0 15px 25px var(--black);
     border-radius: 5px;
     width: 40%;
+    min-width: 600px;
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 1%;
@@ -275,15 +284,18 @@ input:checked + .experience { display: block; }
 }
 #courses .logo{
     width: 10%;
+    min-width: 30px;
 }
 #courses .leftCard{
     width: 25%;
+    min-width: 150px;
 }
 .details{
     display: none;
     padding: 2%;
     width: 60%;
     color: var(--black);
+    
     
 }
 .details p{
@@ -347,4 +359,155 @@ align-items: center; }
 }
 @keyframes p{
     from{--p:0}
+}
+
+
+#contact{
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--black);
+    background: linear-gradient(0deg, var(--yale-blue) 42%, var(--black) 42%, var(--black) 43%, var(--bittersweet) 43%);
+    height: 100vh;
+
+}
+
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid var(--bittersweet);
+    border-radius: 4px;
+    padding: 10px;
+    background: none;
+}
+
+#contact input[type=submit] {
+    margin-top: 5%;
+}
+
+#contact label{
+    padding-top: 2%;
+    font-weight: bold;
+}
+
+
+
+#messageCard{
+    background-color: var(--silver);
+    color: var(--black);
+    box-shadow: 0 15px 25px var(--black);
+    border-radius: 5px;
+    width: 40%;
+    min-width: 500px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+    margin-top: 3%;
+
+}
+
+
+@media screen and (max-width: 720px) {
+    nav{
+        display: none;
+    }
+    h1{
+        font-size: 16pt;
+    }
+    #presentation h2{
+        font-size: small;
+        
+    }
+
+    #profile{
+        display: flex;
+        flex-direction: column;
+    }
+    #bio{
+        width: 90%;
+        height: 30%;
+    }
+    
+    #profilePhoto{
+        width: 30%;
+
+    }
+
+
+    
+    #hello{
+        width: 90%;
+        height: 40%;
+    }
+    #hello h2{
+        font-size: 2em;
+        margin: 1.5%;
+    }
+
+    #hello p{
+        margin: 1em;
+    }
+
+
+
+
+    .jobRight{
+        width: 80%;
+        min-width: 0px;
+        margin: 0%;
+        padding-bottom: 3%;
+    }
+
+    .jobLeft{
+        width: 80%;
+        min-width: 0px;
+        margin: 0%;
+        text-align: left;
+        padding-bottom: 3%;
+        
+    }
+    .experience li{ 
+        font-size: smaller;
+    }
+
+
+
+
+
+    .card{
+        width: 80%;
+        min-width: 0%;
+        align-items: center;
+        justify-content: center;
+        padding: 5%;
+    }
+    .leftCard{
+        width: 80%;
+    }
+    .rightCard{
+        width: 80%;
+    }
+    .logo {
+        width: 30%;
+    }
+    .details{
+        width: 110%;
+
+        
+    }
+
+
+
+    #messageCard{
+        width: 80%;
+        min-width: 0%;
+        padding-top: 6%;
+        padding-bottom: 6%;
+    }
 }
